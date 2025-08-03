@@ -1,0 +1,117 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 480px;
+  box-sizing: border-box;
+}
+
+/* Login form */
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px;
+  margin: 6px 0;
+  width: 100%;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Todo list */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+li {
+  padding: 12px;
+  margin: 8px 0;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  width: auto;
+  margin-left: 8px;
+  background-color: #2196f3;
+}
+
+li button:hover {
+  background-color: #0b7dda;
+}
+
+li button:last-child {
+  background-color: #f44336;
+}
+
+li button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+/* Error Message */
+p[style*='color:red'] {
+  color: #e53935;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* Logout button */
+button.logout {
+  background-color: #9e9e9e;
+}
+
+button.logout:hover {
+  background-color: #7e7e7e;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .app-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}
